@@ -356,6 +356,8 @@ res_b <- do_oaxaca(dat = oaxaca_results_w,
 
 ######################### STANDARD ERRORS #######################
 
+## The standard errors computation follows from Ben Jann (2008): https://www.repec.ethz.ch/ets/papers/jann_oaxaca.pdf 
+
 ## T test
 black <- dataset1[which(dataset1$black=="1"),]
 white <- dataset1[which(dataset1$black=="0"),]
